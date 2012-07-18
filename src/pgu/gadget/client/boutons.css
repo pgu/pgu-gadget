@@ -1,0 +1,85 @@
+@external bouton;
+@external tool;
+@external tMain;
+@external blocouvert;
+@external bleu;
+@external vert;
+@external rouge;
+@external gris;
+@external noir;
+@external disabled;
+
+.bouton, .tool .tMain .blocouvert h2 a.bouton, button.bouton {
+	color:white;
+	font-size:11px;		
+	text-transform:uppercase;
+	margin-right:10px;
+	padding:1px 5px;
+	padding-top:2px;
+	text-decoration:none;
+	border:1px solid #cbcdcc;
+	-moz-box-shadow: 1px 1px 0 #909090;
+	-webkit-box-shadow: 1px 1px 0 #909090;
+	box-shadow: 1px 1px 0 #909090;
+	cursor:pointer;
+}
+	
+.tMain .blocouvert h2 a.bouton button.bouton,  .tMain .blocouvert a.bouton button.bouton{
+	color:white;
+	font-size:11px;		
+	text-transform:uppercase;
+	margin-right:5px;
+	padding:1px 3px;
+	padding-top:1px;
+	text-decoration:none;
+	border:1px solid #cbcdcc;
+	-moz-box-shadow: 1px 1px 0 #909090;
+	-webkit-box-shadow: 1px 1px 0 #909090;
+	box-shadow: 1px 1px 0 #909090;
+	cursor:pointer;
+	height:18px;
+	font-weight:bold;
+	float:right;
+}	
+.bouton.bleu {
+	background:#1682c3;
+	}
+.bouton.bleu:hover {
+	background:#0099cb;
+	}		
+.bouton.vert {
+	background:#4ca902;
+	}
+.bouton.vert:hover {
+	background:#5cc803;
+	}		
+.bouton.rouge {
+	background:#c12e27;
+	}
+.bouton.rouge:hover {
+	background:#d7534d;
+	}
+.bouton.gris {
+	background:#9a9a9a;
+	float:right;
+	}
+.bouton.gris:hover {
+	background:#808080;
+	}
+.bouton.noir {
+	background:#282828;
+	}
+.bouton.noir:hover {
+	background:#545454;
+} 	
+.bouton.disabled {
+	background:#9a9a9a;
+	opacity:0.7;
+	cursor:not-allowed;
+}
+.bouton.disabled:hover {
+	background:#9a9a9a;
+	opacity:0.7;
+	cursor:not-allowed;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field='res' type='pgu.gadget.client.Resources'/>
+    
+    <ui:style field='gadgets' src="gadgets.css" />
+    <ui:style field='tools' src="tools.css" />
+    <ui:style field='lists' src="lists.css" />
+    <ui:style field='colors' src="colors.css" />
+
+    <g:HTMLPanel>
+    <div class="{gadgets.container}">
+        <div class="{gadgets.gadget}">
+            <div class="{gadgets.header}">
+                <div class="{tools.tools}">
+                    <span class="{tools.tool_sort_az}"><g:Image resource='{res.w_sort_up}'/> A-z</span>
+                    <span class="{tools.tool_sort_date}"><g:Image resource='{res.w_sort_down}'/> date</span>
+                    <a href="#" class="{tools.tool_tooltip_container}"><g:Image resource='{res.w_header_down}'/>
+                        <span class="{tools.tool_tooltip_menu}">
+                            <span class="{tools.tool_tooltip_entry}">Open Widget</span>
+                            <span class="{tools.tool_tooltip_entry}">Mimimize Widget</span>
+                            <span class="{tools.tool_tooltip_entry}">Normal size</span>
+                            <span class="{tools.tool_tooltip_entry}">Maximize Widget</span>                      
+                            <span class="{tools.tool_tooltip_entry}">Order by a-z</span>
+                            <span class="{tools.tool_tooltip_entry}">Order by date</span>
+                            <span class="{tools.tool_tooltip_entry}">Create new FAMILY</span>
+                        </span>
+                    </a>
+                    <a href="#"><g:Image resource='{res.w_header_trash}'/></a>
+                </div>
+                <div class="{gadgets.header_title} {colors.color_generic}">              
+                    Family <span>(18)</span>
+                </div>
+            </div>
+            <div class="{gadgets.content}">
+                <ul class="{lists.list_container}">
+                    <li class="{lists.list_entry} {lists.odd}">
+                        <div class="{lists.cell_status}">
+                            Today - 11:25<br/>
+                            by <a href="#" class="{colors.color_user} {tools.tool_tooltip_container}">Nsol<span class="{tools.tool_tooltip_with_right_arrow}"><b>Nadia Sol</b></span></a>
+                        </div>
+                        <g:Image resource='{res.s_family}'/>
+                        <span class="{lists.cell_important} {colors.color_pos}">Marteaux</span> 
+                        <span class="{colors.color_content}">(25)</span>
+                    </li>
+                    <li class="{lists.list_entry} {lists.even}">
+                        <div class="{lists.cell_status}">
+                            Today - 11:25<br/>
+                            by <a href="#" class="{colors.color_user} {tools.tool_tooltip_container}">Amarousez<span class="{tools.tool_tooltip_with_right_arrow}"><b>Amandine Marousez</b></span></a>
+                        </div>  
+                        <g:Image resource='{res.s_family}'/>
+                        <span class="{lists.cell_important} {colors.color_pos}">Traitement des rosiers</span> 
+                        <span class="{colors.color_content}">(31)</span>
+                    </li>
+                    <li class="{lists.list_entry} {lists.odd}">
+                        <div class="{lists.cell_status}">
+                            Yesterday - 11:25<br/>
+                            by <a href="#" class="{colors.color_user} {tools.tool_tooltip_container}">Nsol<span class="{tools.tool_tooltip_with_right_arrow}"><b>Nadia Sol</b></span></a>
+                        </div>
+                        <g:Image resource='{res.s_family}'/>
+                        <span class="{lists.cell_important} {colors.color_pos}">Perçeuses</span> 
+                        <span class="{colors.color_content}">(2)</span>
+                    </li>
+                    <li class="{lists.list_entry} {lists.even}">
+                        <div class="{lists.cell_status}">
+                            23/10/2010 - 11:25<br/>
+                            by <a href="#" class="{colors.color_user} {tools.tool_tooltip_container}">Nsol<span class="{tools.tool_tooltip_with_right_arrow}"><b>Nadia Sol</b></span></a>
+                        </div>
+                        <g:Image resource='{res.s_family}'/>
+                        <span class="{lists.cell_important} {colors.color_pos}">Tondeuses</span> 
+                        <span class="{colors.color_content}">(16)</span>
+                    </li>
+                    <li class="{lists.list_entry} {lists.odd}">
+                        <div class="{lists.cell_status}">
+                            23/10/2010 - 11:25<br/>
+                            by <a href="#" class="{colors.color_user} {tools.tool_tooltip_container}">Adelobette<span class="{tools.tool_tooltip_with_right_arrow}"><b>Antoine Delobette</b></span></a>
+                        </div>
+                        <g:Image resource='{res.s_family}'/>
+                        <span class="{lists.cell_important} {colors.color_pos}">Coffres-forts</span> 
+                        <span class="{colors.color_content}">(58)</span>
+                    </li>
+                </ul> 
+                
+                <div class="{gadgets.footer}">
+                    <a href="#" class="{tools.tool_new_family} {tools.tool_tooltip_container}"><g:Image resource='{res.m_family_plus}'/><span class="{tools.tool_tooltip_with_right_arrow}">Create new FAMILY</span></a>
+                    <a href="#" class="{tools.tool_search_btn}">View all FAMILIES</a>
+                    <a href="#" class="{tools.tool_tooltip_container} {tools.tool_search_input}">
+                        <input type="text" value="Search FAMILY autocompletion" class="{tools.tool_search_input}" onclick="this.value='';" />
+                        <span class="{tools.tool_tooltip_with_left_arrow}">Enter the name of the FAMILY and the list automatically updates</span>
+                    </a>
+                    
+                    <span class="{lists.pager}">
+                        <a href="#" class="{lists.pager_page}">1</a>
+                        <a href="#" class="{lists.pager_page} {lists.pager_page_selected}">2</a>
+                        <a href="#" class="{lists.pager_page}">3</a>
+                        <a href="#" class="{lists.pager_page}">4</a>
+                        <a href="#" class="{lists.pager_page}">5</a> 
+                    </span> 
+                </div>
+            </div>
+        </div>
+    </div>
+    </g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,145 @@
+.tools {
+    float:right; 
+	margin-right:5px; 
+}
+/* TODO ???
+.wTools img{	 
+	vertical-align:middle;
+	margin-left:1px;
+} 
+*/
+.tool_sort_az {
+    margin-right:7px;
+	padding:2px 3px;
+	cursor:pointer;
+}
+.tool_sort_az:hover { 
+	background:#e1edfc;
+}
+.tool_sort_date { 
+	margin-right:30px;
+	padding:2px 3px;
+	cursor:pointer;
+}
+.tool_sort_date:hover {
+    background:#e1edfc;
+}
+.tool_tooltip_container {
+}
+.tool_tooltip_menu {
+    display: none;
+}
+.tool_tooltip_container:hover .tool_tooltip_menu {
+    position: absolute;
+	display:block;
+	z-index: 99;  
+	left:-135px;
+	width:150px;
+	margin-top:-1px;	
+    font-size:12px;
+	font-weight:bold;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	border:1px solid #a7b1ba;	
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	background: white; 
+	padding:3px;        
+}
+.tool_tooltip_entry {
+    display:inline-block;
+	color: #4680ae; 
+	width:135px;
+	padding:5px; 
+	min-height:14px;  
+	padding-right:10px;        
+}
+.tool_tooltip_entry:hover {
+    background:#F4F4F4;
+}
+.tool_tooltip_with_right_arrow {
+    display:none;
+    font-size:12px;
+}
+.tool_tooltip_container:hover .tool_tooltip_with_right_arrow {
+    position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:11px;
+	left:-180px;
+	font-weight:bold;
+}
+.tool_new_family {
+    float:right; 
+	position:relative;
+	display:block;
+	width:25px;
+	margin-right:8px;
+	text-decoration:none;
+}
+.tool_new_family img {
+    margin:1px;
+}
+.tool_new_family img:hover {
+    margin:0px;
+	border:1px solid #bbbbbb;        
+}
+.tool_search_btn {
+    color:white;
+	font-size:11px;		
+	text-transform:uppercase;
+	margin-right:10px;
+	padding:1px 5px;
+	padding-top:2px;
+	text-decoration:none;
+	border:1px solid #cbcdcc;
+	-moz-box-shadow: 1px 1px 0 #909090;
+	-webkit-box-shadow: 1px 1px 0 #909090;
+	box-shadow: 1px 1px 0 #909090;
+	cursor:pointer;
+	background:#1682c3;
+}
+.tool_search_input {
+    color:#000;
+	background-color:white;
+	border:1px solid #4366a8;
+	height: 18px;
+	width:200px;
+	font-family:"sergoe UI", calibri, arial, helvetica;
+	padding:0px;
+	font-size:12px;
+	padding-left:3px;
+	vertical-align:middle;
+	top:6px;
+	float:left;
+	display:inline-block;
+	vertical-align:top;
+	left:10px;
+}
+.tool_tooltip_with_left_arrow {
+    display:none;
+    font-size:12px;
+}
+.tool_tooltip_container:hover .tool_tooltip_with_left_arrow {
+    position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:11px;
+	left:-180px;
+	font-weight:bold;
+}
+

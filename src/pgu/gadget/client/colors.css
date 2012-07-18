@@ -1,0 +1,57 @@
+@external color_generic;
+@external color_dpc;
+@external color_family;
+@external color_dec;
+@external color_series;
+@external color_data;
+@external color_type;
+@external color_content;
+@external color_model;
+@external color_user;
+@external color_pos;
+@external color_chapter;
+@external color_attribute;
+@external color_netchandising;
+
+.color_generic {
+	color:#0c5188;
+}
+.color_dpc {
+	color:#0c5188;
+}
+.color_family {
+	color:#367a70;
+}
+.color_dec {
+	color:#007877;
+}
+.color_series {
+	color:#5d417c;
+}
+.color_data {
+	color:#494949;
+}
+.color_type {
+	color:#004b3e;
+}
+.color_content {
+	color:#000000;
+}
+.color_model {
+	color:#582700;
+}
+.color_user {
+	color:#115680;
+}
+.color_pos {
+	color:#007877;
+}
+.color_chapter {
+	color:#115680;
+}
+.color_attribute {
+	color:#7c0a86;
+}
+.color_netchandising {
+	color:#556b95;
+}

@@ -1,0 +1,399 @@
+@external widget;
+@external wHeader;
+@external tooltip;
+@external tt;
+@external liste;
+@external tContent;
+@external toolContainer;
+@external icon;
+@external attribute;
+@external delete;
+@external bouton;
+@external stackelem;
+@external paging;
+
+.entry {
+    font-weight: bold;
+    font-size:10px;
+    font-weight:normal;
+} 
+ .widget .wHeader .tooltip span {
+	display:none; 
+}
+ .widget .wHeader .tooltip span.tt {
+	font-size:12px;
+}
+ .widget .wHeader .tooltip:hover span.tt {
+	position: absolute;
+	z-index: 99;  
+	display:block;
+	width:150px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	left:-135px;
+	font-weight:bold;
+	margin-top:-1px;	
+	border:1px solid #a7b1ba;	
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	background: white; 
+	padding:3px;
+}
+ .widget .wHeader .tooltip span.tt b {
+	display:inline-block;
+	color: #4680ae; 
+	width:135px;
+	padding:5px; 
+	min-height:14px;  
+	padding-right:10px;
+}
+ .widget .wHeader .tooltip span.tt b:hover {
+	background:#F4F4F4;
+} 
+
+
+ .widget .wContent .tooltip {
+	position:absolute;
+}
+/* .widget .wContent .tooltip span {
+}*/
+ .widget .wContent .tooltip span.tt {
+	display:none; 
+	font-size:12px;
+}
+ .widget .wContent .tooltip:hover span.tt {
+	position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:11px;
+	left:-180px;
+	font-weight:bold;
+}
+ .widget .wContent .tooltip.autocomplete:hover span.tt {
+	left:-10px;
+} 
+ .widget .wContent .tooltip span.tt b {
+	display:inline-block;
+	color: #ffffff;
+	min-height:14px; 
+	background: #4680ae; 
+	border: 1px solid #4680ae;
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	padding-left:3px;
+	padding-right:3px;
+}
+
+ .widget .wContent .tooltip:hover:after {
+	 content:url(../images/tooltiptop.gif);	 
+}
+ 
+.toolContainer .tHeader .tooltip {
+	position:absolute;
+}
+.toolContainer .tHeader .tooltip span {
+	display:none; 
+}
+.toolContainer .tHeader .tooltip span.tt {
+	font-size:12px;
+}
+.toolContainer .tHeader .tooltip:hover span.tt {
+	position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:11px;
+	left:-180px;
+	font-weight:bold;
+}
+.toolContainer .tHeader .tooltip span.tt b {
+	display:inline-block;
+	color: #ffffff;
+	min-height:10px; 
+	background: #4680ae; 
+	border: 1px solid #4680ae;
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.toolContainer .tHeader .tooltip:hover:after {
+	 content:url(../images/tooltiptop.gif);	 
+}
+.toolContainer .tHeader a.tooltip { 
+	position:relative;
+	width:0px;
+	display:inline;
+	float:left;
+	height:10px;
+	text-decoration:none;
+	left:125px;
+	font-size:11px;
+}
+.toolContainer .tHeader h1 a.tooltip { 
+	position:relative;
+	width:0px;
+	display:block;
+	float:left;
+	height:10px;
+	text-decoration:none;
+	left:125px;
+	font-size:11px;
+}
+.toolContainer .tHeader h1 a.tooltip span.tt {
+	display:block;
+	visibility:hidden;
+}
+.toolContainer .tHeader h1 a.tooltip:hover span.tt {
+	display:block;
+	visibility:visible;
+}
+
+
+
+
+
+
+.toolContainer .tContent .tooltip {
+	position:relative;
+}
+.toolContainer .tContent .liste .tooltip {
+	font-size:11px;
+	position:relative;
+}
+
+.toolContainer .tContent .tooltip span {
+	display:none; 
+}
+.toolContainer .tContent .tooltip span.tt {
+	font-size:12px;
+}
+.toolContainer .tContent .tooltip:hover span.tt {
+	position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:11px;
+	left:-180px;
+	font-weight:bold;
+}
+
+.toolContainer .tContent .icon  {
+	cursor:default; 
+}
+.toolContainer .tContent .tooltip.icon  {
+	cursor:pointer; 
+}
+.toolContainer .tContent .tooltip.icon:hover span.tt {
+	left:-40px; 
+}
+
+.toolContainer .tContent .liste .tooltip:hover span.tt {
+	margin-top:0px;
+}
+ 
+
+.toolContainer .tContent .tooltip span.tt b {
+	display:inline;
+	color: #ffffff;
+	min-height:10px; 
+	background: #4680ae; 
+	border: 1px solid #4680ae;
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.toolContainer .tContent .tooltip:hover:after {
+	 content:url(../images/tooltiptop.gif);
+position:relative	 
+}
+.toolContainer .tContent .attribute a.tooltip { 
+	position:relative;
+	width:0px;
+	display:inline-block; 
+	height:0px;
+	text-decoration:none;
+	width:20px;
+	font-size:11px;
+	vertical-align:top;
+	
+}
+
+.toolContainer .tContent .attribute a.tooltip.delete:hover:after {
+	 content:url(../images/tooltiptop2.gif);
+	 position:relative;	 
+}
+.toolContainer .tContent .attribute a.tooltip.delete span.tt b {
+	display:inline;
+	background: #666666; 
+	border:1px solid #666666;
+}
+
+
+ .toolContainer .tContent a.bouton.tooltip { 
+  position:relative;
+	display:inline-block;  
+	text-decoration:none;
+	 height:13px;
+	 padding-top:1px;
+	 line-height:13px;
+	font-size:11px;
+	vertical-align:top;
+}
+
+
+ .toolContainer .tContent fieldset.stackelem legend a.bouton.tooltip { 
+	display:none;  
+}
+ .toolContainer .tContent fieldset.stackelem legend:hover a.bouton.tooltip { 
+	display:inline-block;
+	margin:3px;
+	margin-left:10px; 	
+}
+ .toolContainer .tContent a.bouton.tooltip:hover:after {
+	 content:url(../images/tooltiptop.gif);
+	position:absolute;
+	top:13px; 
+}
+
+ .toolContainer .tContent .paging a.bouton.tooltip:hover:after {
+	 content:url(../images/tooltiptop2.gif);
+	position:absolute;
+	top:13px; 
+}
+.toolContainer .tContent a.bouton.tooltip:hover span.tt {
+	position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:left; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:8px;
+	left:0px;
+	font-weight:normal;
+}
+.toolContainer .tContent a.bouton.tooltip:hover span.tt b {
+	text-transform:none;
+}
+
+.toolContainer .tContent a.bouton.tooltip:hover span.tt b.order img {
+	vertical-align:middle;
+	margin-left:15px;
+}
+.toolContainer .tContent a.bouton.tooltip:hover span.tt b.order img:first-child {
+	vertical-align:middle;
+	margin-left:0px;
+}
+.toolContainer .tContent a.bouton.tooltip span.tt b {
+	display:inline-block;
+	color: #4680ae;
+	min-height:18px; 
+	background: #EBEDF9; 
+	border: 1px solid #4680ae;
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	padding:5px;
+	width:270px;
+}
+ 
+.toolContainer .tContent .paging a.bouton.tooltip span.tt b {
+	display:inline-block;
+	color: #4680ae;
+	min-height:18px; 
+	background: #eeeeee; 
+	border: 1px solid #cccccc;
+	border-radius: 5px 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;  
+	padding:5px;
+	width:100px;
+} 
+ 
+.toolContainer .tContent a.bouton.tooltip span.tt b input[type=text]  {
+	display:inline-block;
+	background: #F5F5F5; 
+	border: 1px solid #cccccc;
+	width:180px;
+	font-weight:normal;
+	margin-left:5px;
+}
+
+.toolContainer .tContent a.bouton.tooltip span.tt b input[type=radio] {
+	display:inline-block;
+	background: #F5F5F5; 
+	border: 0p;
+	width:18px;
+	font-weight:normal;
+}
+
+.toolContainer .tContent a.bouton.tooltip span.tt b label {
+	display:block;
+	padding-top:6px;padding-left:50px;
+	cursor:pointer;
+}
+.toolContainer .tContent .segment a.bouton.tooltip span.tt b label {
+	padding-top:6px;padding-left:10px;
+}
+.toolContainer .tContent .segment a.bouton.tooltip span.tt b label small{
+	font-size:10px;
+	color:black
+} 
+
+.toolContainer .tContent a.bouton.tooltip span.tt.type b label {
+	padding-left:0px;
+}
+
+.toolContainer .tContent a.bouton.tooltip span.tt b select.multiple {
+	width:150px;
+	height:192px;
+	float:right;
+}
+
+
+._hidden {
+	display:none; 
+}
+._container:hover span.tt {
+	position: absolute;
+	z-index: 99;  
+	padding:0px; 
+	display:block;
+	width:200px;
+	white-space:auto;
+	text-align:right; 
+	text-decoration:none;
+	font-size:12px;
+	margin-top:11px;
+	left:-180px;
+	font-weight:bold;
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='pgu_gadget'>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
+  <!-- lib for gadgets -->
+  <inherits name='com.google.gwt.gadgets.Gadgets' />
+  
+  <entry-point class='pgu.gadget.client.Pgu_gadget'/>
+
+  <source path='client'/>
+  <source path='shared'/>
+  <set-property name="user.agent" value="safari" />
+</module>
